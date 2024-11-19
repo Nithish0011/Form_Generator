@@ -1,38 +1,222 @@
-.App {
+body {
+  background-color: #74B9FF;
+  
+}
+
+div {
+  display: inline-flexbox;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.button {
+    background-color: #FF8C00; /* This is the equivalent of bg-orange-500 */
+    color: white; /* This corresponds to text-white */
+    font-weight: bold; /* This corresponds to font-bold */
+    padding: 0.5rem 1rem; /* This corresponds to py-2 px-4 */
+    border-radius: 0.25rem; /* This corresponds to rounded */
+    transition: background-color 0.3s; /* Optional: for smooth hover transition */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.select-custom {
+  display: block; /* Equivalent to block */
+  appearance: none; /* Equivalent to appearance-none */
+  width: 100%; /* Equivalent to w-full */
+  background-color: white; /* Equivalent to bg-white */
+  border: 1px solid #A0AEC0; /* Equivalent to border border-gray-400 */
+  padding: 0.5rem 1rem; /* Equivalent to py-2 px-4 */
+  padding-right: 2rem; /* Equivalent to pr-8 */
+  border-radius: 0.25rem; /* Equivalent to rounded */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Equivalent to shadow */
+  line-height: 1.25; /* Equivalent to leading-tight */
+  transition: border-color 0.2s; /* Smooth transition for border color */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.select-custom:hover {
+  border-color: #A0AEC0; /* Equivalent to hover:border-gray-500 */
+}
+
+.select-custom:focus {
+  outline: none; /* Equivalent to focus:outline-none */
+  box-shadow: 0 0 0 0.2rem rgba(66, 153, 225, 0.5); /* Equivalent to focus:shadow-outline */
+}
+h2 {
+  font-size: 2rem; /* Set the font size */
+  font-weight: 700; /* Bold font weight */
+  color: #333; /* Dark gray color for text */
+  margin: 1.5rem 0; /* Vertical margin for spacing */
+  line-height: 1.2; /* Line height for better readability */
+  text-align: left; /* Align text to the left */
+  text-transform: uppercase; /* Transform text to uppercase (optional) */
+  border-bottom: 2px solid #ccc; /* Optional: underline effect */
+  padding-bottom: 0.5rem; /* Space between text and underline */
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+p {
+  font-size: 1rem; /* Default font size */
+  line-height: 1.6; /* Increased line height for better readability */
+  color: #333; /* Dark gray color for text */
+  margin: 0 0 1.5rem; /* No margin at the top, margin at the bottom */
+  padding: 0; /* No padding */
+  text-align: justify; /* Justified text for a clean look */
+  font-family: 'Arial', sans-serif; /* Font family (you can change this) */
+  letter-spacing: 0.5px; /* Slightly increased letter spacing */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+p strong {
+  font-weight: bold; /* Bold text for strong emphasis */
+}
+
+p em {
+  font-style: italic; /* Italic text for emphasis */
+}
+.form-group {
+  margin-bottom: 1rem; /* Equivalent to mb-4 */
+}
+
+.form-group label {
+  display: block; /* Equivalent to block */
+  color: #4A5568; /* Equivalent to text-gray-700 */
+  font-size: 0.875rem; /* Equivalent to text-sm */
+  font-weight: bold; /* Equivalent to font-bold */
+  margin-bottom: 0.5rem; /* Equivalent to mb-2 */
+}
+
+.error-message {
+  color: #F56565; /* Equivalent to text-red-500 */
+  font-size: 0.75rem; /* Equivalent to text-xs */
+  font-style: italic; /* Equivalent to italic */
+}
+
+/* General styles for the container */
+.d-flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.min-h-screen {
+  min-height: 100vh; /* Full height of the viewport */
+}
+
+.bg-gray-100 {
+  background-color: #f7fafc; /* Light gray background */
+}
+
+/* Form styles */
+form {
+  max-width: 400px; /* Limit the width of the form */
+  margin: 0 auto; /* Center the form horizontally */
+  padding: 2rem; /* Padding around the form */
+  background-color: #ffffff; /* White background for the form */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* Heading styles */
+h2 {
+  font-size: 1.5rem; /* Font size for the title */
+  color: #2d3748; /* Dark gray color */
+  margin-bottom: 1rem; /* Space below the heading */
+  text-align: center; /* Center align the title */
+}
+
+/* Paragraph styles */
+p {
+  color: #4a5568; /* Medium gray color */
+  margin-bottom: 1.5rem; /* Space below the description */
+  text-align: center; /* Center align the description */
+}
+
+/* Button styles */
+button {
+  width: 100%; /* Full width button */
+  padding: 0.75rem; /* Padding inside the button */
+  background-color: #3182ce; /* Blue background */
+  color: #ffffff; /* White text color */
+  border: none; /* No border */
+  border-radius: 4px; /* Slightly rounded corners */
+  font-size: 1rem; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+  background-color: #2b6cb0; /* Darker blue on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  form {
+      width: 90%; /* Adjust form width on smaller screens */
   }
-  to {
-    transform: rotate(360deg);
+}
+
+/* General styles for form fields */
+.mb-4 {
+  margin-bottom: 1rem; /* Space below each form field */
+}
+
+label {
+  display: block; /* Block display for label */
+  color: #4a5568; /* Dark gray color for text */
+  font-size: 0.875rem; /* Small font size */
+  font-weight: bold; /* Bold font weight */
+  margin-bottom: 0.5rem; /* Space below the label */
+}
+
+/* Input styles */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  width: 100%; /* Full width input */
+  padding: 0.75rem; /* Padding inside the input */
+  border: 1px solid #cbd5e0; /* Light gray border */
+  border-radius: 4px; /* Slightly rounded corners */
+  font-size: 1rem; /* Standard font size */
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  border-color: #3182ce; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Error message styles */
+.text-red-500 {
+  color: #e53e3e; /* Red color for error messages */
+}
+
+.text-xs {
+  font-size: 0.75rem; /* Extra small font size */
+}
+
+.italic {
+  font-style: italic; /* Italic style for error messages */
+}
+
+/* Optional: Responsive styles */
+@media (max-width: 600px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  textarea {
+      font-size: 0.875rem; /* Slightly larger font size on smaller screens */
   }
 }
