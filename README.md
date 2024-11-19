@@ -1,46 +1,61 @@
-# Getting Started with Create React App
+Hi Guys, my name is Nithish i developed these project by paste json file the form may create
+LIVE DEMO: https://nithishform.netlify.app/
+site ask you to Enter the json file so i mentioned it in "copyjsonfile" above go to above file and copy the json code.
+This project showcases a dynamic form generator built with TypeScript, enabling users to create customizable forms effortlessly. Explore the live demo here and discover how to streamline form creation in your applications! Project Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project showcases a dynamic form generator built with TypeScript, enabling users to create customizable forms effortlessly. The application leverages modern technologies such as React, React Hook Form, and Zod for validation, ensuring a robust and user-friendly experience.
 
-## Available Scripts
+Key Features
 
-In the project directory, you can run:
+Dynamic Form Creation: Users can easily add, edit, and remove form fields based on their requirements.
+Validation: Integrated validation using Zod ensures that all user inputs meet specified criteria, enhancing data integrity.
+User -Friendly Interface: The application is designed with a clean and intuitive interface, making it accessible for users of all skill levels.
+Live Demo
+Explore the live demo of the dynamic form generator here and see how it can simplify your form management tasks!
 
-### `npm start`
+Getting Started
+To get started with the project, follow the installation instructions in the repository. Ensure you have Node.js installed, and then clone the repository to your local machine.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Installation Steps
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Clone the repository:
 
-### `npm test`
+bash
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Verify
 
-### `npm run build`
+Open In Editor
+Edit
+Copy code
+git clone https://github.com/yourusername/dynamic-form-generator.git  
+Navigate to the project directory:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+bash
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Verify
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Open In Editor
+Edit
+Copy code
+cd dynamic-form-generator  
+Install the dependencies:
 
-### `npm run eject`
+bash
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Verify
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Open In Editor
+Edit
+Copy code
+npm install  
+Start the development server:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+bash
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Verify
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Open In Editor
+Edit
+Copy code
+npm run dev  
+By following these steps, you will have the dynamic form generator up and running on your local machine!
